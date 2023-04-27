@@ -6,6 +6,12 @@ module.exports = function (api) {
       "@babel/plugin-proposal-export-namespace-from",
       "react-native-reanimated/plugin",
       require.resolve("expo-router/babel"),
+      ["module:react-native-dotenv",
+      {
+        envName: ".env",
+        moduleName: "@env",
+        path: ".env"
+      }]
     ],
   };
 };
